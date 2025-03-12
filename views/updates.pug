@@ -1,0 +1,19 @@
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body    
+        form(action="/update-cobj", method="POST")
+            label(for="name") Name:
+            input(type="text", name="name", id="name")
+            br
+            label(for="strength") Strength:
+            input(type="number", name="strength", id="strength")
+            br
+            label(for="magic") Magic:
+            input(type="number", name="magic", id="magic")
+            br
+            button(type="submit") Submit
+        a(href="/") Return to homepage
